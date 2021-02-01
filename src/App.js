@@ -15,11 +15,13 @@ function App() {
     //run once when the app starts
     useEffect(() => {
       getLocalTodos();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     //use effect
     useEffect(() => {
       filterHandler();
       saveLocalTodos();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [todos, status]);
 
   //functions
